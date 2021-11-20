@@ -9,7 +9,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="The Description of This Page Goes Right Here and its !Important" />
         <meta name="keywords" content="keywords,goes,here,for,this,web,site,its,!important,and,keep,it,dynamic" />
-        <title>Animtora | Anime & Manga Community Template</title>
+        <title>HealX | Best Anime CMS</title>
         <!-- Open Graph Meta Tags -->
         <meta property="og:title" content="This Page title Goes Here" />
         <meta property="og:description" content="The Description of This Page Goes Right Here and its !Important" />
@@ -30,38 +30,14 @@
         <header class="tornado-header" data-sticky="absolute">
             <div class="container">
                 <!-- Search Box -->
-                <form class="form-ui search-box">
-                    <input type="text" placeholder="Write Search Keyword Here">
-                    <button class="ti-search search-btn"></button>
+                <form class="form-ui search-box" action="manga-list.html" method="get">
+                    <input type="text" id="term" name="term" placeholder="Write Search Keyword Here">
+                    <button class="ti-search search-btn" type="submit"></button>
                 </form>
                 <!-- Logo -->
-                <a href="#" class="logo"><img src="img/logo.png" alt=""></a>
+                <a href="#" class="logo"><img src="https://cdn-icons-png.flaticon.com/128/716/716429.png" alt=""></a>
                 <!-- Action Buttons -->
                 <div class="action-btns">
-                    <!-- Counter Down -->
-                    <a href="count-down.html" class="ti-clock-alarm icon-btn tooltip-bottom" data-title="Show Time Count Down"></a>
-                    <!-- Notifications -->
-                    <div class="dropdown notifications-dropdown">
-                        <a href="#" class="dropdown-btn icon-btn ti-notifications" data-notifications="5"></a>
-                        <ul class="dropdown-list">
-                            <!-- Notifications Item -->
-                            <li>a New Episode of One Piece has been Uploaded <a href="anime-stream.html"><strong>One Piece 898</strong></a></li>
-                            <!-- Notifications Item -->
-                            <li class="danger">Error Message Goes Here as Notification <a href="anime-stream.html"><strong>issue title</strong></a></li>
-                            <!-- Notifications Item -->
-                            <li>a New Chapter of Hunter x Hunter has been Uploaded <a href="anime-stream.html"><strong>One Piece 898</strong></a></li>
-                            <!-- Notifications Item -->
-                            <li class="warning">Warning Message Goes Here as Notification <a href="anime-stream.html"><strong>Warning Link</strong></a></li>
-                        </ul>
-                    </div>
-                    <!-- User Menu -->
-                    <div class="dropdown user-menu">
-                        <a href="#" class="dropdown-btn icon-btn ti-user"></a>
-                        <ul class="dropdown-list">
-                            <li><a href="login.html">Login</a></li>
-                            <li><a href="register.html">Register</a></li>
-                        </ul>
-                    </div>
                     <!-- Menu Button -->
                     <a href="#" class="menu-btn ti-menu-round icon-btn" data-id="main-menu"></a>
                 </div>
@@ -72,326 +48,18 @@
             <div class="container navigation-menu" data-id="main-menu" data-logo="img/logo-colored.png">
                 <ul>
                     <li><a href="index.html">Home Page</a></li>
-                    <li><a href="anime-list.html">Online Anime</a></li>
-                    <li><a href="manga-list.html">Manga Reader</a></li>
-                    <li><a href="anime-ova.html">Anime Ovas</a></li>
-                    <li><a href="anime-movies.html">Online Movies</a></li>
-                    <li><a href="forums.html">Forums</a></li>
-                    <li><a href="blog.html">Blog</a></li>
-                    <li><a href="contact-us.html">Contact US</a></li>
+                    <li><a href="search.html">Search Anime</a></li>
+                    <li><a href="manga-list.html">Search Manga</a></li>
                 </ul>
             </div>
         </header>
         <!-- // Main Header -->
-
-        <!-- Filters -->
-        <div class="filters-section">
-            <!-- Sorting -->
-            <div class="container">
-                <!-- Sorting By -->
-                <ul class="reset-block sorting-by">
-                    <li><a href="#">Sort By A-Z</a></li>
-                    <li><a href="#">Sort By Rating</a></li>
-                    <li><a href="#">Sort by newest Manga</a></li>
-                </ul>
-                <!-- Alphabet Sorting -->
-                <ul class="reset-block alphabet-sorting">
-                    <li><a href="#">ALL</a></li>
-                    <li><a href="#">#</a></li>
-                    <li><a href="#">A</a></li>
-                    <li><a href="#">B</a></li>
-                    <li><a href="#">C</a></li>
-                    <li><a href="#">D</a></li>
-                    <li><a href="#">E</a></li>
-                    <li><a href="#">F</a></li>
-                    <li><a href="#">G</a></li>
-                    <li><a href="#">H</a></li>
-                    <li><a href="#">J</a></li>
-                    <li><a href="#">K</a></li>
-                    <li><a href="#">L</a></li>
-                    <li><a href="#">M</a></li>
-                    <li><a href="#">N</a></li>
-                    <li><a href="#">O</a></li>
-                    <li><a href="#">P</a></li>
-                    <li><a href="#">Q</a></li>
-                    <li><a href="#">R</a></li>
-                    <li><a href="#">S</a></li>
-                    <li><a href="#">T</a></li>
-                    <li><a href="#">U</a></li>
-                    <li><a href="#">V</a></li>
-                    <li><a href="#">W</a></li>
-                    <li><a href="#">X</a></li>
-                    <li><a href="#">Y</a></li>
-                    <li><a href="#">Z</a></li>
-                </ul>
-            </div>
-            <!-- Advanced Search -->
-            <div class="advanced-search">
-                <h2 class="search-title">Advanced Search <i class="ti-arrow-down-chevron"></i></h2>
-                <form class="form-ui large container advanced-search-form">
-                    <div class="row align-center-x">
-                        <!-- Form Control -->
-                        <div class="col-12 col-m-6 col-l-4">
-                            <input type="text" name="search-keywords" placeholder="Search Keywords">
-                        </div>
-                        <!-- Form Control -->
-                        <div class="col-12 col-m-6 col-l-4">
-                            <select name="search-date" class="chevron-select advanced-select">
-                                <option value="">Puplshing Date</option>
-                            </select>
-                        </div>
-                        <!-- Form Control -->
-                        <div class="col-12 col-m-6 col-l-4">
-                            <select name="search-status" class="chevron-select">
-                                <option value="">Manga  Status</option>
-                                <option value="completed">Completed</option>
-                                <option value="on-air">On-Going</option>
-                                <option value="stopped">Stopped</option>
-                            </select>
-                        </div>
-                        <!-- Form Control -->
-                        <div class="col-12 col-m-6 col-l-4">
-                            <select name="search-type" class="chevron-select advanced-select">
-                                <option value="">Manga Type</option>
-                            </select>
-                        </div>
-                        <!-- Form Control -->
-                        <div class="col-12 col-m-6 col-l-4">
-                            <select name="search-author" class="chevron-select advanced-select">
-                                <option value="">Mangaka</option>
-                            </select>
-                        </div>
-                        <!-- Form Control -->
-                        <div class="col-12 col-m-6 col-l-4">
-                            <select name="allowed-age" class="chevron-select">
-                                <option value="">Allowed Age</option>
-                                <option value="PG12">PG12</option>
-                                <option value="PG13">PG13</option>
-                                <option value="PG16">PG16</option>
-                                <option value="PG18">PG18</option>
-                                <option value="PG21">PG21</option>
-                                <option value="PG30">PG30</option>
-                            </select>
-                        </div>
-                        <!-- Buttons -->
-                        <div class="col-12 col-m-6 col-l-4 buttons">
-                            <button class="reset-btn btn secondary rounded">Reset</button>
-                            <input type="submit" value="Search" class="btn primary rounded">
-                        </div>
-                    </div>
-                </form>
-            </div>
-        </div>
-        <!-- // Filters -->
-
         <!-- Page Content -->
         <div class="container page-content">
             <!-- Anime List -->
-            <div class="row">
-                <!-- Media Block -->
-                <div class="col-12 col-m-6 col-l-3 media-block">
-                    <!-- Poster  -->
-                    <a href="manga-details.html" class="image ti-file-document" data-src="img/image-9.png"></a>
-                    <!-- Info -->
-                    <div class="info">
-                        <a href="manga-details.html"><h3>Dragon Ball Super</h3></a>
-                        <a href="manga-details.html"><h4>Last Chapter : 398</h4></a>
-                    </div>
-                    <!-- Rating -->
-                    <a href="#" class="rating"><span>Rating</span> 9.0</a>
-                </div>
-                <!-- Media Block -->
-                <div class="col-12 col-m-6 col-l-3 media-block">
-                    <!-- Poster  -->
-                    <a href="manga-details.html" class="image ti-file-document" data-src="img/image-10.png"></a>
-                    <!-- Info -->
-                    <div class="info">
-                        <a href="manga-details.html"><h3>Hunter x Hunter</h3></a>
-                        <a href="manga-details.html"><h4>Lanuch Date : 125</h4></a>
-                    </div>
-                    <!-- Rating -->
-                    <a href="#" class="rating"><span>Rating</span> 9.0</a>
-                </div>
-                <!-- Media Block -->
-                <div class="col-12 col-m-6 col-l-3 media-block">
-                    <!-- Poster  -->
-                    <a href="manga-details.html" class="image ti-file-document" data-src="img/image-11.png"></a>
-                    <!-- Info -->
-                    <div class="info">
-                        <a href="manga-details.html"><h3>Boruto Naruto The Next Generation</h3></a>
-                        <a href="manga-details.html"><h4>Last Chapter : 678</h4></a>
-                    </div>
-                    <!-- Rating -->
-                    <a href="#" class="rating"><span>Rating</span> 9.0</a>
-                </div>
-                <!-- Media Block -->
-                <div class="col-12 col-m-6 col-l-3 media-block">
-                    <!-- Poster  -->
-                    <a href="manga-details.html" class="image ti-file-document" data-src="img/image-7.png"></a>
-                    <!-- Info -->
-                    <div class="info">
-                        <a href="manga-details.html"><h3>Shingeki no Kyojin S02</h3></a>
-                        <a href="manga-details.html"><h4>Last Chapter : 678</h4></a>
-                    </div>
-                    <!-- Rating -->
-                    <a href="#" class="rating"><span>Rating</span> 9.0</a>
-                </div>
-                <!-- Media Block -->
-                <div class="col-12 col-m-6 col-l-3 media-block">
-                    <!-- Poster  -->
-                    <a href="manga-details.html" class="image ti-file-document" data-src="img/image-1.png"></a>
-                    <!-- Info -->
-                    <div class="info">
-                        <a href="manga-details.html"><h3>Shingeki no Kyojin S02</h3></a>
-                        <a href="manga-details.html"><h4>Last Chapter : 257</h4></a>
-                    </div>
-                    <!-- Rating -->
-                    <a href="#" class="rating"><span>Rating</span> 9.0</a>
-                </div>
-                <!-- Media Block -->
-                <div class="col-12 col-m-6 col-l-3 media-block">
-                    <!-- Poster  -->
-                    <a href="manga-details.html" class="image ti-file-document" data-src="img/image-2.png"></a>
-                    <!-- Info -->
-                    <div class="info">
-                        <a href="manga-details.html"><h3>Hunter x Hunter</h3></a>
-                        <a href="manga-details.html"><h4>Last Chapter : 125</h4></a>
-                    </div>
-                    <!-- Rating -->
-                    <a href="#" class="rating"><span>Rating</span> 9.0</a>
-                </div>
-                <!-- Media Block -->
-                <div class="col-12 col-m-6 col-l-3 media-block">
-                    <!-- Poster  -->
-                    <a href="manga-details.html" class="image ti-file-document" data-src="img/image-9.png"></a>
-                    <!-- Info -->
-                    <div class="info">
-                        <a href="manga-details.html"><h3>Dragon Ball Super</h3></a>
-                        <a href="manga-details.html"><h4>Last Chapter : 398</h4></a>
-                    </div>
-                    <!-- Rating -->
-                    <a href="#" class="rating"><span>Rating</span> 9.0</a>
-                </div>
-                <!-- Media Block -->
-                <div class="col-12 col-m-6 col-l-3 media-block">
-                    <!-- Poster  -->
-                    <a href="manga-details.html" class="image ti-file-document" data-src="img/image-10.png"></a>
-                    <!-- Info -->
-                    <div class="info">
-                        <a href="manga-details.html"><h3>Hunter x Hunter</h3></a>
-                        <a href="manga-details.html"><h4>Lanuch Date : 125</h4></a>
-                    </div>
-                    <!-- Rating -->
-                    <a href="#" class="rating"><span>Rating</span> 9.0</a>
-                </div>
-                <!-- Media Block -->
-                <div class="col-12 col-m-6 col-l-3 media-block">
-                    <!-- Poster  -->
-                    <a href="manga-details.html" class="image ti-file-document" data-src="img/image-11.png"></a>
-                    <!-- Info -->
-                    <div class="info">
-                        <a href="manga-details.html"><h3>Boruto Naruto The Next Generation</h3></a>
-                        <a href="manga-details.html"><h4>Last Chapter : 678</h4></a>
-                    </div>
-                    <!-- Rating -->
-                    <a href="#" class="rating"><span>Rating</span> 9.0</a>
-                </div>
-                <!-- Media Block -->
-                <div class="col-12 col-m-6 col-l-3 media-block">
-                    <!-- Poster  -->
-                    <a href="manga-details.html" class="image ti-file-document" data-src="img/image-7.png"></a>
-                    <!-- Info -->
-                    <div class="info">
-                        <a href="manga-details.html"><h3>Shingeki no Kyojin S02</h3></a>
-                        <a href="manga-details.html"><h4>Last Chapter : 678</h4></a>
-                    </div>
-                    <!-- Rating -->
-                    <a href="#" class="rating"><span>Rating</span> 9.0</a>
-                </div>
-                <!-- Media Block -->
-                <div class="col-12 col-m-6 col-l-3 media-block">
-                    <!-- Poster  -->
-                    <a href="manga-details.html" class="image ti-file-document" data-src="img/image-1.png"></a>
-                    <!-- Info -->
-                    <div class="info">
-                        <a href="manga-details.html"><h3>Shingeki no Kyojin S02</h3></a>
-                        <a href="manga-details.html"><h4>Last Chapter : 257</h4></a>
-                    </div>
-                    <!-- Rating -->
-                    <a href="#" class="rating"><span>Rating</span> 9.0</a>
-                </div>
-                <!-- Media Block -->
-                <div class="col-12 col-m-6 col-l-3 media-block">
-                    <!-- Poster  -->
-                    <a href="manga-details.html" class="image ti-file-document" data-src="img/image-2.png"></a>
-                    <!-- Info -->
-                    <div class="info">
-                        <a href="manga-details.html"><h3>Hunter x Hunter</h3></a>
-                        <a href="manga-details.html"><h4>Last Chapter : 125</h4></a>
-                    </div>
-                    <!-- Rating -->
-                    <a href="#" class="rating"><span>Rating</span> 9.0</a>
-                </div>
-                <!-- Media Block -->
-                <div class="col-12 col-m-6 col-l-3 media-block">
-                    <!-- Poster  -->
-                    <a href="manga-details.html" class="image ti-file-document" data-src="img/image-1.png"></a>
-                    <!-- Info -->
-                    <div class="info">
-                        <a href="manga-details.html"><h3>Shingeki no Kyojin S02</h3></a>
-                        <a href="manga-details.html"><h4>Last Chapter : 257</h4></a>
-                    </div>
-                    <!-- Rating -->
-                    <a href="#" class="rating"><span>Rating</span> 9.0</a>
-                </div>
-                <!-- Media Block -->
-                <div class="col-12 col-m-6 col-l-3 media-block">
-                    <!-- Poster  -->
-                    <a href="manga-details.html" class="image ti-file-document" data-src="img/image-2.png"></a>
-                    <!-- Info -->
-                    <div class="info">
-                        <a href="manga-details.html"><h3>Hunter x Hunter</h3></a>
-                        <a href="manga-details.html"><h4>Last Chapter : 125</h4></a>
-                    </div>
-                    <!-- Rating -->
-                    <a href="#" class="rating"><span>Rating</span> 9.0</a>
-                </div>
-                <!-- Media Block -->
-                <div class="col-12 col-m-6 col-l-3 media-block">
-                    <!-- Poster  -->
-                    <a href="manga-details.html" class="image ti-file-document" data-src="img/image-9.png"></a>
-                    <!-- Info -->
-                    <div class="info">
-                        <a href="manga-details.html"><h3>Dragon Ball Super</h3></a>
-                        <a href="manga-details.html"><h4>Last Chapter : 398</h4></a>
-                    </div>
-                    <!-- Rating -->
-                    <a href="#" class="rating"><span>Rating</span> 9.0</a>
-                </div>
-                <!-- Media Block -->
-                <div class="col-12 col-m-6 col-l-3 media-block">
-                    <!-- Poster  -->
-                    <a href="manga-details.html" class="image ti-file-document" data-src="img/image-10.png"></a>
-                    <!-- Info -->
-                    <div class="info">
-                        <a href="manga-details.html"><h3>Hunter x Hunter</h3></a>
-                        <a href="manga-details.html"><h4>Lanuch Date : 125</h4></a>
-                    </div>
-                    <!-- Rating -->
-                    <a href="#" class="rating"><span>Rating</span> 9.0</a>
-                </div>
+            <div class="row" id="row">
+                
             </div>
-            <!-- Pagination -->
-            <ul class="pagination separate">
-                <li><a href="#" class="ti-arrow-left-c"></a></li>
-                <li class="current"><a href="#">01</a></li>
-                <li><a href="#">02</a></li>
-                <li><a href="#">03</a></li>
-                <li><a href="#">04</a></li>
-                <li><a href="#">05</a></li>
-                <li><a href="#">06</a></li>
-                <li><a href="#" class="ti-arrow-right-c"></a></li>
-            </ul>
         </div>
         <!-- // Page Content -->
 
@@ -524,6 +192,7 @@
 
         <!-- Required JS Files -->
         <script src="js/tornado.min.js"></script>
+        <script src="render/searchm.js"></script>
     </body>
 
 <!-- Mirrored from phenixthemes.com/frontdemo/animtora/manga-list.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 19 Nov 2021 08:49:56 GMT -->

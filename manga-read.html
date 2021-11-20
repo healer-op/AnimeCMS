@@ -9,7 +9,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="The Description of This Page Goes Right Here and its !Important" />
         <meta name="keywords" content="keywords,goes,here,for,this,web,site,its,!important,and,keep,it,dynamic" />
-        <title>Animtora | Anime & Manga Community Template</title>
+        <title>HealX | Best Anime CMS</title>
         <!-- Open Graph Meta Tags -->
         <meta property="og:title" content="This Page title Goes Here" />
         <meta property="og:description" content="The Description of This Page Goes Right Here and its !Important" />
@@ -30,39 +30,14 @@
         <header class="tornado-header" data-sticky="absolute">
             <div class="container">
                 <!-- Search Box -->
-                <form class="form-ui search-box">
-                    <input type="text" placeholder="Write Search Keyword Here">
-                    <button class="ti-search search-btn"></button>
+                <form class="form-ui search-box" action="manga-list.html" method="get">
+                    <input type="text" id="term" name="term" placeholder="Write Search Keyword Here">
+                    <button class="ti-search search-btn" type="submit"></button>
                 </form>
                 <!-- Logo -->
-                <a href="#" class="logo"><img src="img/logo.png" alt=""></a>
+                <a href="#" class="logo"><img src="https://cdn-icons-png.flaticon.com/128/716/716429.png" alt=""></a>
                 <!-- Action Buttons -->
                 <div class="action-btns">
-                    <!-- Counter Down -->
-                    <a href="count-down.html" class="ti-clock-alarm icon-btn tooltip-bottom" data-title="Show Time Count Down"></a>
-                    <!-- Notifications -->
-                    <div class="dropdown notifications-dropdown">
-                        <a href="#" class="dropdown-btn icon-btn ti-notifications" data-notifications="5"></a>
-                        <ul class="dropdown-list">
-                            <!-- Notifications Item -->
-                            <li>a New Episode of One Piece has been Uploaded <a href="anime-stream.html"><strong>One Piece 898</strong></a></li>
-                            <!-- Notifications Item -->
-                            <li class="danger">Error Message Goes Here as Notification <a href="anime-stream.html"><strong>issue title</strong></a></li>
-                            <!-- Notifications Item -->
-                            <li>a New Chapter of Hunter x Hunter has been Uploaded <a href="anime-stream.html"><strong>One Piece 898</strong></a></li>
-                            <!-- Notifications Item -->
-                            <li class="warning">Warning Message Goes Here as Notification <a href="anime-stream.html"><strong>Warning Link</strong></a></li>
-                        </ul>
-                    </div>
-                    <!-- User Menu -->
-                    <div class="dropdown user-menu">
-                        <a href="#" class="dropdown-btn icon-btn ti-user"></a>
-                        <ul class="dropdown-list">
-                            <li><a href="login.html">Login</a></li>
-                            <li><a href="register.html">Register</a></li>
-                        </ul>
-                    </div>
-                    <!-- Menu Button -->
                     <a href="#" class="menu-btn ti-menu-round icon-btn" data-id="main-menu"></a>
                 </div>
             </div>
@@ -72,13 +47,8 @@
             <div class="container navigation-menu" data-id="main-menu" data-logo="img/logo-colored.png">
                 <ul>
                     <li><a href="index.html">Home Page</a></li>
-                    <li><a href="anime-list.html">Online Anime</a></li>
-                    <li><a href="manga-list.html">Manga Reader</a></li>
-                    <li><a href="anime-ova.html">Anime Ovas</a></li>
-                    <li><a href="anime-movies.html">Online Movies</a></li>
-                    <li><a href="forums.html">Forums</a></li>
-                    <li><a href="blog.html">Blog</a></li>
-                    <li><a href="contact-us.html">Contact US</a></li>
+                    <li><a href="search.html">Search Anime</a></li>
+                    <li><a href="manga-list.html">Search Manga</a></li>
                 </ul>
             </div>
         </header>
@@ -86,13 +56,13 @@
 
         <!-- Page Head -->
         <div class="page-head">
-            <h1>Boruto Naruto Next Generations</h1>
+            <h1 id="tt"></h1>
             <!-- Controls -->
-            <div class="page-controls">
+            <!-- <div class="page-controls">
                 <a href="#" class="btn secondary rounded">Previous</a>
                 <span class="btn">Chapter : 07</span>
                 <a href="#" class="btn primary rounded">Next</a>
-            </div>
+            </div> -->
         </div>
 
         <!-- Page Content -->
@@ -105,63 +75,40 @@
                         <!-- Action Buttons -->
                         <ul class="media-share manga-read-btns">
                             <li class="dark-bg"><a href="#" class="ti-aspect-ratio reader-fs">Full Screen Reader</a></li>
-                            <li class="primary-bg"><a href="#" class="ti-arrow-down-a" target="_blank">Download Chapter</a></li>
-                            <li class="chapter-select">
-                                <select class="chevron-select form-control">
-                                    <option value="">Select Chapter</option>
-                                    <option value="#link">01</option>
-                                    <option value="#link">02</option>
-                                    <option value="#link">03</option>
-                                    <option value="#link">04</option>
-                                    <option value="#link">05</option>
-                                    <option value="#link">06</option>
-                                    <option value="#link">07</option>
-                                    <option value="#link">08</option>
-                                    <option value="#link">09</option>
-                                    <option value="#link">10</option>
-                                    <option value="#link">11</option>
-                                    <option value="#link">12</option>
-                                    <option value="#link">13</option>
-                                    <option value="#link">14</option>
-                                    <option value="#link">15</option>
-                                    <option value="#link">16</option>
-                                    <option value="#link">17</option>
-                                    <option value="#link">18</option>
-                                    <option value="#link">19</option>
-                                    <option value="#link">20</option>
-                                    <option value="#link">21</option>
-                                </select>
-                            </li>
+                            <!-- <li class="primary-bg"><a href="#" class="ti-arrow-down-a" target="_blank">Download Chapter</a></li>
                             <li class="facebook-bg"><a href="#" class="ti-facebook">Share On Facebook</a></li>
                             <li class="twitter-bg"><a href="#" class="ti-twitter">Share On Twitter</a></li>
-                            <li class="whatsapp-bg"><a href="#" class="ti-whatsapp">Share On WhatsApp</a></li>
+                            <li class="whatsapp-bg"><a href="#" class="ti-whatsapp">Share On WhatsApp</a></li> -->
                         </ul>
+                        <div class="" id="man" style="overflow: auto;">
+                        </div>
                     </div>
                     <!-- Reader -->
                     <div class="col-12 col-l-9">
                         <!-- Manga Navigation -->
-                        <div class="reader-navigation">
+                        <!-- <div class="reader-navigation">
                             <a href="#" class="prev-btn ti-arrow-left-chevron">Previous Page</a>
                             <span class="reader-pager">Page 01</span>
                             <a href="#" class="next-btn ti-arrow-right-chevron">Next Page</a>
-                        </div>
+                        </div> -->
                         <!-- Reader List -->
-                        <div class="reader-list" data-current="1" data-page-1="img/manga-1.png" data-page-2="img/manga-2.png" data-page-3="img/manga-3.png">
+                        <div class="reader-list" id="loaders">
+                            
                             <img src="img/manga-1.png" alt="">
                         </div>
                         <!-- Manga Navigation -->
-                        <div class="reader-navigation">
+                        <!-- <div class="reader-navigation">
                             <a href="#" class="prev-btn ti-arrow-left-chevron">Previous Page</a>
                             <span class="reader-pager">Page 01</span>
                             <a href="#" class="next-btn ti-arrow-right-chevron">Next Page</a>
-                        </div>
+                        </div> -->
                         <!-- // Manga Navigation -->
                     </div>
                     <!-- // Reader -->
                 </div>
             </div>
             <!-- Tags -->
-            <div class="tags">
+            <!-- <div class="tags">
                 <h3 class="area-title">Tags</h3>
                 <a href="#" class="tag-btn">Manga</a>
                 <a href="#" class="tag-btn">FullMetal</a>
@@ -174,61 +121,7 @@
                 <a href="#" class="tag-btn">Manga</a>
                 <a href="#" class="tag-btn">FullMetal</a>
                 <a href="#" class="tag-btn">Alchemist</a>
-            </div>
-            <!-- Comments Form -->
-            <div class="area-head">
-                <h2 class="area-title">Add Comment</h2>
-            </div>
-            <form class="comments-form form-ui large row">
-                <div class="col-12 col-m-6">
-                    <input type="text" name="" placeholder="Name">
-                </div>
-                <div class="col-12 col-m-6">
-                    <input type="email" name="" placeholder="Email">
-                </div>
-                <div class="col-12">
-                    <textarea name="" placeholder="Comment"></textarea>
-                    <input type="submit" value="Add Comment" class="btn primary rounded">
-                </div>
-            </form>
-            <!-- Comments List -->
-            <ul class="comments-list">
-                <!-- Comment Block -->
-                <li class="comment-block">
-                    <div class="info">
-                        <img src="img/avatar.png" alt="">
-                        <h3>Abdullah  Ramadan <span>14:30 | 07/5/2017</span></h3>
-                    </div>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
-                </li>
-                <!-- Comment Block -->
-                <li class="comment-block">
-                    <div class="info">
-                        <img src="img/avatar-2.png" alt="">
-                        <h3>Mostapha Mohammed <span>14:30 | 07/5/2017</span></h3>
-                    </div>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
-                </li>
-                <!-- Comment Block -->
-                <li class="comment-block">
-                    <div class="info">
-                        <img src="img/avatar-3.png" alt="">
-                        <h3>Abdullah  Ramadan <span>14:30 | 07/5/2017</span></h3>
-                    </div>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
-                </li>
-            </ul>
-            <!-- Pagination -->
-            <ul class="pagination separate">
-                <li><a href="#" class="ti-arrow-left-c"></a></li>
-                <li class="current"><a href="#">01</a></li>
-                <li><a href="#">02</a></li>
-                <li><a href="#">03</a></li>
-                <li><a href="#">04</a></li>
-                <li><a href="#">05</a></li>
-                <li><a href="#">06</a></li>
-                <li><a href="#" class="ti-arrow-right-c"></a></li>
-            </ul>
+            </div> -->
             <!-- Related Anime -->
             <div class="area-head">
                 <h2 class="area-title">Related Animes</h2>
@@ -433,12 +326,13 @@
         <!-- Copyrights -->
         <div class="copyrights">
             <div class="container">
-                <p>all copyrights reserved for Animtora | Online Anime and Manga Community</p>
-                <a href="#" class="tooltip" data-title="Designed by Phoenix Themes"><img src="img/flash.png" alt="Phoenix Themes"></a>
+                <p>all copyrights reserved for HealX | Online Anime and Manga Community</p>
+                <!-- <a href="#" class="tooltip" data-title="Designed by Phoenix Themes"><img src="img/flash.png" alt="Phoenix Themes"></a> -->
             </div>
         </div>
 
         <!-- Required JS Files -->
+        <script src="render/mangad.js"></script>
         <script src="js/tornado.min.js"></script>
     </body>
 
